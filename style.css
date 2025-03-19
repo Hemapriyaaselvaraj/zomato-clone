@@ -1,0 +1,288 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  height: 70vh;
+  overflow: visible;
+  position: relative;
+  object-fit: cover;
+}
+.header-image {
+  position: absolute;
+  top: -30vh;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+.nav {
+  display: flex;
+  margin: 1vh 10vw;
+  justify-content: space-between;
+  color: white;
+  font-size: 1em;
+}
+.nav-bar {
+  display: flex;
+}
+.nav-bar li {
+  font-size: 1em;
+  font-weight: lighter;
+  padding-left: 30px;
+  list-style-type: none;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 7vh;
+  align-items: center;
+}
+.logo {
+  width: 30vw;
+}
+.head h3 {
+  color: white;
+  font-size: 40px;
+  font-weight: 10;
+}
+.search {
+  display: flex;
+  width: 55vw;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px 0;
+}
+.search input {
+  outline: none;
+  border: none;
+  width: 50%;
+  padding: left 10px;
+  font-size: 17px;
+}
+.search p {
+  color: gray;
+  border-right: 1px solid gray;
+  font-size: 15px;
+  padding-right: 10px;
+}
+.sec-1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13vh;
+}
+.box {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  margin: 3px 10px;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: rgb(243, 240, 240);
+  box-shadow: 0 1px 2px gray;
+}
+.box {
+  overflow: hidden; /* Prevents overflow when scaling */
+  transition: transform 0.3s; /* Smooth transition for scaling */
+}
+
+.box:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.box img {
+  width: 100%;
+  border-radius: 15px;
+  z-index: -1;
+  border: 1px solid gray;
+}
+.white {
+  position: absolute;
+  color: white;
+  bottom: 0px;
+  align-items: center;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+  height: 30%;
+  z-index: 2;
+}
+.white h3,
+.white p {
+  text-align: left;
+  color: rgb(56, 56, 56);
+  margin-left: 20px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.collection {
+  margin-left: 230px;
+}
+.collection p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.collection h1 {
+  margin-bottom: 5px;
+}
+.collection-box {
+  position: relative;
+  width: 260px;
+  height: 370px;
+  margin: 3px 5px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.collection-box:hover {
+  cursor: pointer;
+}
+
+.collection-text {
+  position: absolute;
+  bottom: 0px;
+  z-index: 2;
+}
+
+.collection-text h3,
+.collection-text p {
+  text-align: left;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.locality {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 225px;
+  padding-right: 225px;
+}
+.city {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 2px gray;
+  border-color: gray;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-top: 20px;
+}
+.city h3,
+.city p {
+  margin: 0px;
+  margin-bottom: 5px;
+  font-weight: lighter;
+  color: #71797e;
+}
+.city:hover {
+  box-shadow: 2px 5px 5px gray;
+  cursor: pointer;
+}
+
+.footer-s1 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 225px;
+  padding-right: 225px;
+  padding-top: 50px;
+}
+
+footer {
+  background-color: rgb(251, 250, 247);
+  margin-top: 50px;
+}
+
+.region {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.region div {
+  border-color: gray;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.region div:hover {
+  cursor: pointer;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.country img {
+  height: 20px;
+  width: 20px;
+  padding-right: 10px;
+}
+
+.footer-s2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 225px;
+  padding-right: 225px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.footer-s2 h4 {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.footer-s2 p {
+  font-weight: 100;
+  color: gray;
+  margin-bottom: 2px;
+  margin-top: 8px;
+}
+
+.footer-s2 p:hover {
+  cursor: pointer;
+}
+
+hr {
+  margin-right: 225px;
+  margin-left: 225px;
+}
+
+.copy-rights {
+  padding-left: 225px;
+  padding-right: 225px;
+  color: gray;
+}
+
+.overlay {
+  visibility: hidden;
+  width: 300px;
+}
+
+.overlay:target {
+  visibility: visible;
+}
+.login-header {
+  display: flex;
+  justify-content: space-between;
+}
+.login-details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
